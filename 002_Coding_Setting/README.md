@@ -38,7 +38,7 @@ Starting in Leptos version 0.5.3, rust-analyzer support was added for the #[comp
 
 # neovim with lspconfig:
 
-```json
+```lua
 require('lspconfig').rust_analyzer.setup {
   -- Other Configs ...
   settings = {
