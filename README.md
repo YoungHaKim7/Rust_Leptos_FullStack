@@ -10,8 +10,10 @@
 - Leptos eBook
   - https://book.leptos.dev/
 
-- Leptos example
-  - https://github.com/leptos-rs/leptos/tree/main/examples
+- Leptos Github
+  - https://github.com/leptos-rs/leptos
+    - Leptos example
+      - https://github.com/leptos-rs/leptos/tree/main/examples
 
 <hr>
 
