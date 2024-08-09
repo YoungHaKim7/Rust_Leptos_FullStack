@@ -2,6 +2,9 @@
 - Leptos
   - https://leptos.dev/
 
+- Leptos eBook
+  - https://book.leptos.dev/
+
 <hr>
 
 # Letos + Auxm
