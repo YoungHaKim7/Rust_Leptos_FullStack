@@ -10,6 +10,12 @@
 
 <hr>
 
+# Integrating Leptos, Rust's Modern Web Development Framework, into my uptime tracker | coreyja
+
+- https://youtu.be/wm7BRRUdDt4?si=J7ItFNF9W63-zKZf
+
+<hr>
+
 # Letos + Auxm
 - https://github.com/leptos-rs/start-axum
 
