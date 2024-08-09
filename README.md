@@ -5,6 +5,9 @@
 - Leptos eBook
   - https://book.leptos.dev/
 
+- Leptos example
+  - https://github.com/leptos-rs/leptos/tree/main/examples
+
 <hr>
 
 # Letos + Auxm
