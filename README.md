@@ -29,3 +29,7 @@
 - Moderately new to Rust, and have a project in mind of a real-time markdown editor. For now, I just want to be able to have multiple users be able to edit a markdown document, and have the changes saved to a markdown file on the server (kinda like Google Docs)
   - Trying to decide which of the two makes the most sense, or if I should use Rust on the frontend at all!
 - https://www.reddit.com/r/rust/s/8yDbt0gjmc
+
+# 백앤드 개발자가 알아야할 RoadMap
+
+![KakaoTalk_20240129_160102026](https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/8473d4f1-1428-4b6f-b32d-ca926d4d80e9)
