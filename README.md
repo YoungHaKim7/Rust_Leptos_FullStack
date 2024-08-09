@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4a2a5554-098a-41d4-8c53-68e3c0ebe408"
+</p>
+
 # Rust_Leptos_FullStack
 - Leptos
   - https://leptos.dev/
