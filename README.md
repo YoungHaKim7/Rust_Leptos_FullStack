@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4a2a5554-098a-41d4-8c53-68e3c0ebe408"
+  <img width=40px src="![Rust](https://user-images.githubusercontent.com/67513038/213436632-820a1675-98d9-4626-979d-be63c60cdcb7.png)"/>
+  <img src="https://github.com/user-attachments/assets/4a2a5554-098a-41d4-8c53-68e3c0ebe408" />
 </p>
 
 # Rust_Leptos_FullStack
