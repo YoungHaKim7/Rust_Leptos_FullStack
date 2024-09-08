@@ -59,8 +59,22 @@ trunk serve --port 3000 --open
 $ find . -type f -name "justfile" -exec rm {} \;
 
 ```
-
 - https://ccambo.tistory.com/entry/MacOS-%ED%8A%B9%EC%A0%95-%EA%B2%BD%EB%A1%9C-%EB%B0%91%EC%9D%98-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%9D%BC%EA%B4%84-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0
+
+# 특정port찾아서 지우기_프로세스ID Kill하기[|🔝|](#link)
+
+```
+# 포트찾기
+lsof -i :8080
+
+lsof -i :"찾고 싶은 포트번호"
+
+# 죽이고 싶은 포트 죽이기(맨 뒤는 포트 No.쓰면됨)
+kill -9 52474
+
+kill -9 "PID 프로세스 아디 쓰면됨"
+```
+
 
 # VSCode `settings.json`:[|🔝|](#link)
 - https://book.leptos.dev/getting_started/leptos_dx.html
