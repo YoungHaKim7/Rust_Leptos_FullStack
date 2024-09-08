@@ -37,8 +37,8 @@
 <hr>
 
 - [암기해야할 주요 기능들](#암기해야할-주요-기능들)
-  - ReadSignal
-  - WriteSignal
+  - [ReadSignal](https://docs.rs/leptos/latest/leptos/struct.ReadSignal.html)
+  - [WriteSignal](https://docs.rs/leptos/latest/leptos/struct.WriteSignal.html)
 
 <hr>
 
