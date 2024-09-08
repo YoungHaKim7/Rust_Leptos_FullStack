@@ -1,15 +1,6 @@
 use leptos::{component, create_signal, view, IntoView, SignalUpdate, WriteSignal};
 
 #[component]
-pub fn App() -> impl IntoView {
-    let (toggled, set_toggled) = create_signal(false);
-    view! {
-        <p>"Toggled? " {toggled}</p>
-        <ButtonA setter=set_toggled/>
-    }
-}
-
-#[component]
 pub fn ButtonA(setter: WriteSignal<bool>) -> impl IntoView {
     view! {
         <button
@@ -17,6 +8,15 @@ pub fn ButtonA(setter: WriteSignal<bool>) -> impl IntoView {
         >
             "Toggle"
         </button>
+    }
+}
+
+#[component]
+pub fn App() -> impl IntoView {
+    let (toggled, set_toggled) = create_signal(false);
+    view! {
+        <p>"Toggled? " {toggled}</p>
+        <ButtonA setter=set_toggled/>
     }
 }
 

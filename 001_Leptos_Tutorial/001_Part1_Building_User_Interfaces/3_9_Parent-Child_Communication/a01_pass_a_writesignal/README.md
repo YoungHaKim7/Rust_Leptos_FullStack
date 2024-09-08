@@ -1,12 +1,7 @@
 # Result
 
 ```bash
-
-```
-
-# Result
-
-```bash
+trunk serve --open 
 
 ```
 
