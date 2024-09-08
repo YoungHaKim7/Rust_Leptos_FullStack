@@ -55,6 +55,7 @@ trunk serve --port 3000 --open
 ```
 
 # VSCode `settings.json`:[|🔝|](#link)
+- https://book.leptos.dev/getting_started/leptos_dx.html
 ```json
 
 "rust-analyzer.procMacro.ignored": {
