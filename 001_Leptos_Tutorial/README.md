@@ -46,3 +46,15 @@ trunk serve --port 3000 --open
 
 - WriteSignal
   - https://docs.rs/leptos/latest/leptos/struct.WriteSignal.html
+# Result
+
+```bash
+
+```
+
+# Result
+
+```bash
+
+```
+
