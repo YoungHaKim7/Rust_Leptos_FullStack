@@ -15,9 +15,8 @@
 <hr>
 
 - [leptos setting](#leptosrust)
-
+  - [하위폴더 특정파일 지우기(ex)target폴더 justfile같은거](#하위폴더-특정파일-지우기extarget폴더-justfile같은거)
 - [VSCode 세팅](#vscode-settingsjson)
-
 - [`trunk serve --open으로 작동시키기`](#cargo-install-cargo-generate)
 
 <hr>
