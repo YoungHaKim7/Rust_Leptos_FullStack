@@ -121,3 +121,6 @@ kill -9 "PID 프로세스 아디 쓰면됨"
 # 백앤드 개발자가 알아야할 RoadMap[|🔝|](#link)
 
 ![KakaoTalk_20240129_160102026](https://github.com/YoungHaKim7/Cpp_Training/assets/67513038/8473d4f1-1428-4b6f-b32d-ca926d4d80e9)
+
+- 러스트 개발자 로드맵 Rust dev
+  - https://roadmap.sh/rust
