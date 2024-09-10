@@ -22,12 +22,6 @@
 
 <hr>
 
-- [Tailwind CSS](#tailwind-css)
-  - [기본 폼Tailwind CSS](https://github.com/tailwindlabs/tailwindcss-forms) 
-  - [Awesome-TailwindCSS](#awesome-tailwindcss)
-
-<hr>
-
 # Rust_Leptos_FullStack
 - Leptos
   - https://leptos.dev/
@@ -50,6 +44,8 @@
 
 - Frontend
   - [Tailwind CSS](#tailwind-css)
+    - [기본 폼Tailwind CSS](https://github.com/tailwindlabs/tailwindcss-forms) 
+    - [Awesome-TailwindCSS](#awesome-tailwindcss)
 
 <hr>
 
