@@ -19,6 +19,7 @@
   - [특정port찾아서 지우기_프로세스ID Kill하기](#특정port찾아서-지우기_프로세스id-kill하기)
 - [VSCode 세팅](#vscode-settingsjson)
 - [`trunk serve --open으로 작동시키기`](#cargo-install-cargo-generate)
+  - [Trunk.toml로 내 맘대로 수정가능](#trunktoml로-내-맘대로-수정가능)
 
 <hr>
 
