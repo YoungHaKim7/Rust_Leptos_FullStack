@@ -48,6 +48,11 @@
 
 <hr>
 
+- Frontend
+  - [Tailwind CSS](#tailwind-css)
+
+<hr>
+
 # Leptos(Rust)[|🔝|](#link)
 https://book.leptos.dev/
 
