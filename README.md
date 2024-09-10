@@ -30,6 +30,9 @@
 - Leptos eBook
   - https://book.leptos.dev/
 
+- Leptos API문서
+  - https://docs.rs/leptos/latest/leptos/
+
 - Leptos Github
   - https://github.com/leptos-rs/leptos
     - Leptos example
