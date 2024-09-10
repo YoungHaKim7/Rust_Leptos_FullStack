@@ -98,6 +98,16 @@ kill -9 "PID 프로세스 아디 쓰면됨"
 
 ```
 
+# Trunk.toml로 내 맘대로 수정가능[|🔝|](#link)
+
+```toml
+[serve]
+# The address to serve on.
+address = "127.0.0.1"
+# The port to serve on.
+port = 8000
+```
+
 # 암기해야할 주요 기능들[|🔝|](#link)
 - ReadSignal
   - https://docs.rs/leptos/latest/leptos/struct.ReadSignal.html
