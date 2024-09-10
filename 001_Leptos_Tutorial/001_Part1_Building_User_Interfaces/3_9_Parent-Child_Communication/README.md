@@ -21,3 +21,14 @@
 
 # 참고 3.3.3 Components and Props
 - https://book.leptos.dev/view/03_components.html#into-props
+
+# 3.3.9(Parent-Child Communication)
+- https://book.leptos.dev/view/08_parent_child.html
+
+There are four basic patterns of parent-child communication in Leptos.
+- 1. Pass a `WriteSignal`
+- 2. Use a Callback
+  - 2.1 Use Closure instead of Callback
+- 3. Use an Event Listener
+- 4. Providing a Context
+  - 4.1 The Context API
