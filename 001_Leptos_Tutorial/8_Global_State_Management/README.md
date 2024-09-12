@@ -1,0 +1,1 @@
+- https://book.leptos.dev/15_global_state.html
