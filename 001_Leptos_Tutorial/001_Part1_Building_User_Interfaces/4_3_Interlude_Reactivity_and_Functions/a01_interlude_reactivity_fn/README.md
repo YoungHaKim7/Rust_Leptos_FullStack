@@ -1,0 +1,8 @@
+# Result
+
+```bash
+
+text = even
+```
+
+
