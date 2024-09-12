@@ -10,6 +10,8 @@
 
 # link
 
+- [WASM우수한 성능에 대해The Truth about Rust/WebAssembly Performance |Greg Johnsto](https://youtu.be/4KtotxNAwME?si=9MefecdXc_ppF0rM)
+
 - [백앤드-개발자가-알아야할-roadmap](#백앤드-개발자가-알아야할-roadmap)
 
 <hr>
