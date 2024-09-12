@@ -13,6 +13,9 @@
   - ReadSignal
   - WriteSignal
 
+- 다른 외국인이 만든 Leptos Tutorial
+  - [Learning Leptos: Build a fine-grained reactive system in 100 lines of code | Greg Johnston](#learning-leptos-build-a-fine-grained-reactive-system-in-100-lines-of-code-greg-johnston)
+
 <hr>
 
 # Leptos(Rust)[|🔝|](#link)
