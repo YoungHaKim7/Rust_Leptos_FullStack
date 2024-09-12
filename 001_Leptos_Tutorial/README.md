@@ -46,15 +46,10 @@ trunk serve --port 3000 --open
 
 - WriteSignal
   - https://docs.rs/leptos/latest/leptos/struct.WriteSignal.html
-# Result
 
-```bash
+# Leptos Tutorial
 
-```
+# Learning Leptos: Build a fine-grained reactive system in 100 lines of code Greg Johnston
 
-# Result
-
-```bash
-
-```
+- https://youtu.be/GWB3vTWeLd4?si=E8z-8RKUfcHxqb-Z
 
