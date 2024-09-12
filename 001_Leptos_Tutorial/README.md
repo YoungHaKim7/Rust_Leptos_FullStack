@@ -56,3 +56,9 @@ trunk serve --port 3000 --open
 
 - https://youtu.be/GWB3vTWeLd4?si=E8z-8RKUfcHxqb-Z
 
+# Result
+
+```bash
+
+```
+
