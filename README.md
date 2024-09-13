@@ -68,6 +68,9 @@ https://book.leptos.dev/
 
 ```
 trunk serve --port 3000 --open
+
+# or
+trunk serve --open
 ```
 
 # Trunk.toml로 내 맘대로 수정가능[|🔝|](#link)
