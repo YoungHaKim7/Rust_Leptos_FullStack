@@ -66,6 +66,8 @@ https://book.leptos.dev/
 
 # cargo install cargo-generate[|🔝|](#link)
 
+- https://github.com/trunk-rs/trunk
+  
 ```
 trunk serve --port 3000 --open
 
