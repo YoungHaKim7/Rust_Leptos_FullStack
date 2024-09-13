@@ -16,6 +16,7 @@
 <hr>
 
 - [백앤드-개발자가-알아야할-roadmap](#백앤드-개발자가-알아야할-roadmap)
+- [Complete Backend Software Engineer Mind Map - Everything You Need to Know (2 HOURS!)Caleb Curry](https://youtu.be/oVfw8Oj-uH8?si=WcGC1kkwRM2c6csz)
 
 <hr>
 
