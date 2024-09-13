@@ -70,14 +70,6 @@ https://book.leptos.dev/
 trunk serve --port 3000 --open
 ```
 
-# 하위폴더 특정파일 지우기(ex)target폴더 justfile같은거[|🔝|](#link)
-
-```bash
-$ find . -type f -name "justfile" -exec rm {} \;
-
-```
-- https://ccambo.tistory.com/entry/MacOS-%ED%8A%B9%EC%A0%95-%EA%B2%BD%EB%A1%9C-%EB%B0%91%EC%9D%98-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%9D%BC%EA%B4%84-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0
-
 # 특정port찾아서 지우기_프로세스ID Kill하기[|🔝|](#link)
 
 ```
@@ -92,6 +84,13 @@ kill -9 52474
 kill -9 "PID 프로세스 아디 쓰면됨"
 ```
 
+# 하위폴더 특정파일 지우기(ex)target폴더 justfile같은거[|🔝|](#link)
+
+```bash
+$ find . -type f -name "justfile" -exec rm {} \;
+
+```
+- https://ccambo.tistory.com/entry/MacOS-%ED%8A%B9%EC%A0%95-%EA%B2%BD%EB%A1%9C-%EB%B0%91%EC%9D%98-%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC-%EC%9D%BC%EA%B4%84-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0
 
 # VSCode `settings.json`:[|🔝|](#link)
 - https://book.leptos.dev/getting_started/leptos_dx.html
@@ -107,15 +106,6 @@ kill -9 "PID 프로세스 아디 쓰면됨"
 
 ```
 
-# Trunk.toml로 내 맘대로 수정가능[|🔝|](#link)
-
-```toml
-[serve]
-# The address to serve on.
-address = "127.0.0.1"
-# The port to serve on.
-port = 8000
-```
 
 # 암기해야할 주요 기능들[|🔝|](#link)
 - ReadSignal
