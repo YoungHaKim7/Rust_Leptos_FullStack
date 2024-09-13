@@ -70,6 +70,16 @@ https://book.leptos.dev/
 trunk serve --port 3000 --open
 ```
 
+# Trunk.toml로 내 맘대로 수정가능[|🔝|](#link)
+
+```toml
+[serve]
+# The address to serve on.
+address = "127.0.0.1"
+# The port to serve on.
+port = 8000
+```
+
 # 특정port찾아서 지우기_프로세스ID Kill하기[|🔝|](#link)
 
 ```
