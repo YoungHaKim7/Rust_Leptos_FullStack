@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+p {
+    margin: var(--size-2);
+}
+
+body>picture,
+button,
+p,
+progress,
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button {
+    margin-bottom: var(--size-2);
+}
+
+
+contact-info {
+    font-style: italic;
+    margin : auto;
+    text-align: center;
+}
+
+contact-list-contacts {
+    font-style: italic;
+    margin : auto;
+    text-align: center;
+}
+
+tabs {
+    padding: 5px;
+}
