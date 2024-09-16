@@ -29,6 +29,11 @@
 
 <hr>
 
+- 외국 영상 Leptos관련
+  - [영상모아보기 Full-Stack Web Apps with Rust and Leptos - July 3, 2024 | Training 4 Programmers](https://youtube.com/playlist?list=PL40umFWNzu2UGL35Qp68s3uP5enQwmwPi&si=5NQdv6PY7sj9fV4y)
+
+<hr>
+
 # Rust_Leptos_FullStack
 - Leptos
   - https://leptos.dev/
