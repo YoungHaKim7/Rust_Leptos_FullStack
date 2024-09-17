@@ -7,7 +7,7 @@ Running stylance
 ././src/scss/main.module.scss
 ```
 
-- run
+# run(`trunk serve --open`)
 ```bash
 $ trunk serve --open
 ```
