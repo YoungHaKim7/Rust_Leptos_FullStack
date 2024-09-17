@@ -83,10 +83,10 @@ port = 8000
 [[hooks]]
 stage = "pre_build"
 command = "stylance"
-command_arguments = [".", "--output-file", "index.css"]
+command_arguments = [".", "--output-file", "styles.css"]
 
 [watch]
-ignore = ["index.css"]
+ignore = ["styles.css"]
 
 ```
 
@@ -102,7 +102,7 @@ port = 8000
 # stylance 실행[|🔝|](#link)
 ```bash
 
-stylance . --output-file ./index.css
+stylance . --output-file ./styles.css
 Running stylance
 ././src/main.module.scss
 ```
@@ -112,7 +112,7 @@ Running stylance
 <!DOCTYPE html>
 <html>
     <head>
-        <link data-trunk rel="css" href="index.css" />
+        <link data-trunk rel="css" href="styles.css" />
     </head>
     <body></body>
 </html>
