@@ -3,6 +3,10 @@
 - stylance-rs
   - https://github.com/basro/stylance-rs
 
+- SCSS
+  - https://sass-lang.com/
+  - https://sass-lang.com/documentation/
+
 <hr>
 
 # link
