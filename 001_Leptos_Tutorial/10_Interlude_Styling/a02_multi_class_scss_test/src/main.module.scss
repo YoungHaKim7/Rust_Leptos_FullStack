@@ -1,0 +1,16 @@
+.red {
+  color: red;
+}
+
+.one {
+  background-color: blue;
+}
+
+#two {
+  color: blue;
+}
+
+.three {
+  @extend .red;
+  background-color: aqua;
+}

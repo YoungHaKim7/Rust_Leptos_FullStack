@@ -1,0 +1,16 @@
+.my-project-red-1ee4825 {
+  color: red;
+}
+
+.my-project-one-1ee4825 {
+  background-color: blue;
+}
+
+#two {
+  color: blue;
+}
+
+.my-project-three-1ee4825 {
+  @extend .red;
+  background-color: aqua;
+}
