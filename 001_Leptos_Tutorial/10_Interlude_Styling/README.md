@@ -107,7 +107,7 @@ Running stylance
 ././src/main.module.scss
 ```
 
-- `index.html`에서 `index.css`(변환된 파일) 연결해줘야함
+- `index.html`에서 `styles.css`(변환된 파일) 연결해줘야함
 ```css
 <!DOCTYPE html>
 <html>
