@@ -94,7 +94,7 @@ Running stylance
 ././src/main.module.scss
 ```
 
-- index.css
+- `index.html`에서 `index.css`(변환된 파일) 연결해줘야함
 ```css
 <!DOCTYPE html>
 <html>
