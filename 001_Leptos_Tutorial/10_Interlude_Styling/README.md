@@ -2,7 +2,7 @@
 
 <hr>
 
-# Scoped CSS style imports for rust. 
+# Scoped CSS style imports for rust.[|🔝|](#link)
 - https://github.com/basro/stylance-rs
 
 - Install stylance cli:
@@ -16,7 +16,7 @@ cargo add stylance -F nightly
   
 ```
 
-# stylance file구성및 세팅
+# stylance file구성및 세팅[|🔝|](#link)
 
 - dist & target은 만들어지는 폴더(index.css로 변환되서 들어감)
 ```
@@ -43,7 +43,7 @@ drwxr-xr-x    - gy-gyoung 18 Sep 00:04 ├──  src
 .rw-r--r--    0 gy-gyoung 18 Sep 00:10 └──  Trunk.toml
 ```
 
-- Trunk.toml
+- Trunk.toml[|🔝|](#link)
 ```toml
 [serve]
 # The address to serve on.
@@ -70,7 +70,7 @@ address = "127.0.0.1"
 port = 8000
 ```
 
-# stylance 실행
+# stylance 실행[|🔝|](#link)
 ```bash
 
 stylance . --output-file ./index.css
@@ -89,13 +89,76 @@ Running stylance
 </html>
 ```
 
+# Cargo.toml세팅[|🔝|](#link)
+```toml
+[package]
+name = "a02_multi_class_scss_test"
+version = "0.1.0"
+edition = "2021"
 
-# stylance-rs 세팅하기
+[dependencies]
+console_error_panic_hook = "0.1.7"
+console_log = "1.0.0"
+leptos = { version = "0.6.15", features = ["nightly", "csr"] }
+log = "0.4.22"
+stylance = { version = "0.5.1", features = ["nightly"] }
+
+[package.metadata.stylance]
+
+# output_file
+# When set, stylance-cli will bundle all css module files
+# into by concatenating them and put the result in this file.
+output_file = "./styles/bundle.scss"
+
+# output_dir
+# When set, stylance-cli will create a folder named "stylance" inside
+# the output_dir directory.
+# The stylance folder will be populated with one file per detected css module
+# and one _all.scss file that contains one `@use "file.module-hash.scss";` statement
+# per module file.
+# You can use that file to import all your modules into your main scss project.
+output_dir = "./styles/"
+
+# folders
+# folders in which stylance cli will look for css module files.
+# defaults to ["./src/"]
+folders = ["./src/", "./styles/"]
+
+# extensions
+# files ending with these extensions will be considered to be
+# css modules by stylance cli and will be included in the output
+# bundle
+# defaults to [".module.scss", ".module.css"]
+extensions = [".module.scss", ".module.css"]
+
+# scss_prelude
+# When generating an scss file stylance-cli will prepend this string
+# Useful to include a @use statement to all scss modules.
+scss_prelude = '@use "../path/to/prelude" as *;'
+
+# hash_len
+# Controls how long the hash name used in scoped classes should be.
+# It is safe to lower this as much as you want, stylance cli will produce an
+# error if two files end up with colliding hashes.
+# defaults to 7
+hash_len = 7
+
+# class_name_pattern
+# Controls the shape of the transformed scoped class names.
+# [name] will be replaced with the original class name
+# [hash] will be replaced with the hash of css module file path.
+# defaults to "[name]-[hash]"
+class_name_pattern = "my-project-[name]-[hash]"
+
+```
+
+
+# stylance-rs 세팅하기[|🔝|](#link)
 - https://stackoverflow.com/questions/78244955/how-to-use-stylance-with-leptos
 
 <hr>
 
-# 다른거
+# rcss-bundler기타etc..등등다른거[|🔝|](#link)
   - https://lib.rs/crates/rcss-bundler
 
 <hr>
