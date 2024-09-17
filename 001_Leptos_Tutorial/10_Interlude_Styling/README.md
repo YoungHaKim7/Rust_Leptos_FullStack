@@ -11,7 +11,8 @@
   - [SCSS_stylance파일구성 및 Install 및 전체 files구성](#scoped-css-style-imports-for-rust)
   - [stylance수동으로 실행하기_`Cargo.toml`에 설정하면 자동 실행도 됨](#stylance-실행)
     - [`Cargo.toml`설정하기 그냥 수동으로 하는게 더 나은거 같은데 아직 모름겠음..](#cargotoml세팅)
-      - [hook관련 Cargo.toml설정 설명서](https://trunkrs.dev/guide/build/hooks.html) 
+      - [Trunk_hook관련 Cargo.toml설정 설명서](https://trunkrs.dev/guide/build/hooks.html)
+      - [Trunk(sass/scss, tailwind, css & icon 기타등등) 관련 설정 설명서](https://trunkrs.dev/assets/#css)
 
 <hr>
 
