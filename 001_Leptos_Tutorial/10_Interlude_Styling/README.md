@@ -121,7 +121,6 @@ log = "0.4.22"
 stylance = { version = "0.5.1", features = ["nightly"] }
 
 [package.metadata.stylance]
-
 # output_file
 # When set, stylance-cli will bundle all css module files
 # into by concatenating them and put the result in this file.
