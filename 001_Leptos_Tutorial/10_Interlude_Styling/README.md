@@ -59,6 +59,7 @@ $ tree
 ```
 
 - Trunk.toml[|🔝|](#link)
+ - 이렇게 설정하면 `trunk serve --open` 하면 1초마다?? 계속 리플레쉬됨. 정신없음 ㅠㅠ
 ```toml
 [serve]
 # The address to serve on.
