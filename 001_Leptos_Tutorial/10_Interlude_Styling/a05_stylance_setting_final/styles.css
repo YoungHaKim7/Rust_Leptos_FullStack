@@ -1,3 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: var(--size-4);
+    text-align: center;
+}
+
+p {
+    margin: var(--size-2);
+}
+
+body>picture,
+button,
+p,
+progress,
+label,
+input,
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+nav,
+.my-project-contact-list-contacts-fd2984a,
+.my-project-tabs-fd2984a {
+    display: flex;
+    justify-content: center;
+}
+
+nav a,
+.my-project-contact-list-contacts-fd2984a a,
+.my-project-tabs-fd2984a a {
+    margin: var(--size-2);
+}
+
+img {
+    height: 100px;
+    width: auto;
+    margin: auto;
+}
+
+html {
+    background-color: black;
+}
+
+@import 'default_css/default.module';
+
 .my-project-red-c7311a6 {
   color: red;
 }
