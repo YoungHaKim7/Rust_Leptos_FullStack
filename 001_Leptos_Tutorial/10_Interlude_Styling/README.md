@@ -50,19 +50,24 @@ $ tree
 ├── README.md
 ├── Trunk.toml
 ├── dist
-│   ├── a04_stylance_test-b1ea5863eb3f8f81.js
-│   ├── a04_stylance_test-b1ea5863eb3f8f81_bg.wasm
-│   ├── index-1282049c66026fcf.css
-│   └── index.html
-├── index.css
+│   ├── a05_stylance_setting_final-7d4e3232bd20f3dd.js
+│   ├── a05_stylance_setting_final-7d4e3232bd20f3dd_bg.wasm
+│   ├── index.html
+│   └── styles-aa32b28c4007bc9a.css
 ├── index.html
 ├── justfile
 ├── rust-toolchain.toml
-└── src
-    ├── main.module.scss
-    └── main.rs
+├── src
+│   ├── main.rs
+│   └── scss
+│       └── main.module.scss
+├── styles
+│   └── stylance
+│       ├── _index.scss
+│       └── main.module-c7311a6.scss
+└── styles.css
 
-3 directories, 14 files
+6 directories, 16 files
 ```
 
 - `Trunk.toml` (계속 리플레쉬되는 정신 없는 버젼ㅠㅠ) 
