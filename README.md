@@ -191,6 +191,16 @@ cargo add stylance -F nightly
 - 다른거
   - https://lib.rs/crates/rcss-bundler
 
+# stylance 치면 scss -> css로 변환됨.
+
+```bash
+
+stylance . --output-file ./index.css
+Running stylance
+././src/main.module.scss
+```
+
+
 <hr>
 
 # Tailwind CSS[|🔝|](#link)
