@@ -58,3 +58,6 @@ Cargo.lock
 pkg/
 /wasm-pack.log
 dist/
+
+# styles
+styles/
