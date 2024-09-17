@@ -3,7 +3,7 @@
 ```bash
 $ stylance . --output-file ./styles.css
 Running stylance
-././src/scss/default.module.scss
+././src/scss/default/default.module.scss
 ././src/scss/main.module.scss
 ```
 
