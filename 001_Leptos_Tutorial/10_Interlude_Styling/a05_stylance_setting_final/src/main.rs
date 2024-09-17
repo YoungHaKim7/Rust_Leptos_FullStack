@@ -14,6 +14,7 @@ fn App() -> impl IntoView {
                     <h3 class="my-project-red-c7311a6">"friends!" </h3>
                     <h3 class=style::red>"red font!" </h3>
                     <h2 class="my-project-three-c7311a6 my-project-red-c7311a6">"class class test" </h2>
+                    <h2 class=style::three>"three three" </h2>
         </div>
     }
 }

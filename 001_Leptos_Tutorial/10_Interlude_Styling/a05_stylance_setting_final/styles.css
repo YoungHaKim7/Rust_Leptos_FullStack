@@ -26,15 +26,15 @@ div {
 }
 
 nav,
-.my-project-contact-list-contacts-fd2984a,
-.my-project-tabs-fd2984a {
+.my-project-contact-list-contacts-e425927,
+.my-project-tabs-e425927 {
     display: flex;
     justify-content: center;
 }
 
 nav a,
-.my-project-contact-list-contacts-fd2984a a,
-.my-project-tabs-fd2984a a {
+.my-project-contact-list-contacts-e425927 a,
+.my-project-tabs-e425927 a {
     margin: var(--size-2);
 }
 
