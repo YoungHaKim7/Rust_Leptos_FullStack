@@ -1,0 +1,26 @@
+.my-project-red-c7311a6 {
+  color: red;
+}
+
+.my-project-one-c7311a6 {
+  background-color: blue;
+}
+
+#two {
+  color: blue;
+}
+
+.my-project-three-c7311a6 {
+  background-color: aqua;
+}
+
+.my-project-container_body-c7311a6 {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  height: auto;
+  width: auto;
+  color: white;
+}
