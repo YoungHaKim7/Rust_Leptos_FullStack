@@ -58,7 +58,8 @@
 <hr>
 
 - Frontend
-  - [SCSS_stylance-rs 세팅하기](#scoped-css-style-imports-for-rust) 
+  - [SCSS_stylance-rs 세팅하기](#scoped-css-style-imports-for-rust)
+    - [SCSS + Stylance-rs + RustLeptos조합](./001_Leptos_Tutorial/10_Interlude_Styling) 
   - [Tailwind CSS](#tailwind-css)
     - [기본 폼Tailwind CSS](https://github.com/tailwindlabs/tailwindcss-forms) 
     - [Awesome-TailwindCSS](#awesome-tailwindcss)
