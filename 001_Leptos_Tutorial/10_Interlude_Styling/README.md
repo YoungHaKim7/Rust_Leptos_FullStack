@@ -16,7 +16,7 @@ cargo add stylance -F nightly
   
 ```
 
-# stylance file구성및 세팅[|🔝|](#link)
+# (Stylance-rs)SCSS_Leptos플러그인files구성및 세팅[|🔝|](#link)
 
 - dist & target은 만들어지는 폴더(index.css로 변환되서 들어감)
 ```
