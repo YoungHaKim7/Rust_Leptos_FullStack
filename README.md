@@ -166,7 +166,10 @@ $ find . -type f -name "justfile" -exec rm {} \;
 <hr>
 
 # CSS & SCSS[|🔝|](#link)
-- https://book.leptos.dev/interlude_styling.html
+- Rust Leptos 설명서
+  - https://book.leptos.dev/interlude_styling.html
+- SCSS 기초
+  - https://sass-lang.com/
 
 <hr>
 
