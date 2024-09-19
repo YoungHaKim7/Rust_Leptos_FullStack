@@ -9,11 +9,28 @@ console_log = "1.0.0"
 leptos = { version = "0.6.15", features = ["nightly", "csr"] }
 log = "0.4.22"
 wasm-bindgen = "0.2.93"
-web-sys = "0.3.70"
+# web-sys = "0.3.70"
 
 [dev-dependendies]
 wasm-bindgen-test = "0.3.43"
 
 
+# [features]
+# CssStyleSheet = ["StyleSheet"]
+
+
+[dependencies.web-sys]
+version = "0.3.70"
+features = ["CssStyleSheet", "Location"]
+
 [features]
-CssStyleSheet = ["StyleSheet"]
+default = []
+# tracing = ["dep:tracing"]
+# trace-component-props = ["dep:serde", "dep:serde_json"]
+# hydration = ["reactive_graph/hydration"]
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--generate-link-to-definition"]
+
+# [package.metadata.cargo-all-features]
+# denylist = ["tracing"]
