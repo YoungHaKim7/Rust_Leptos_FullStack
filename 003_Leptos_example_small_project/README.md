@@ -10,6 +10,7 @@
 
 - actix
   - https://github.com/cudidotdev/JWT-Authentication-with-Rust-Axum-and-Actix
+    - 여기에 정리중.. https://github.com/YoungHaKim7/Jwt_authentication_Axum_and_Actix_Rust
 
 <hr>
 
