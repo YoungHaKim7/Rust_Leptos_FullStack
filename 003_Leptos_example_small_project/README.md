@@ -8,6 +8,9 @@
 - https://youtu.be/DQB-cJPYChg?si=I9OimG7SW5XAz25N
 
 
+- actix
+  - https://github.com/cudidotdev/JWT-Authentication-with-Rust-Axum-and-Actix
+
 <hr>
 
 # Awesome-Leptos
