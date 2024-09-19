@@ -147,7 +147,7 @@ $ find . -type f -name "justfile" -exec rm {} \;
 
 <hr>
 
-# Letos + Auxm[|🔝|](#link)
+# Letos + Axum[|🔝|](#link)
 - https://github.com/leptos-rs/start-axum
 
 <hr>
