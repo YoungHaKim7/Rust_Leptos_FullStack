@@ -1,0 +1,19 @@
+[package]
+name = "a01_websys_view_tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+console_log = "1.0.0"
+leptos = { version = "0.6.15", features = ["nightly", "csr"] }
+log = "0.4.22"
+wasm-bindgen = "0.2.93"
+web-sys = "0.3.70"
+
+[dev-dependendies]
+wasm-bindgen-test = "0.3.43"
+
+
+[features]
+CssStyleSheet = ["StyleSheet"]
