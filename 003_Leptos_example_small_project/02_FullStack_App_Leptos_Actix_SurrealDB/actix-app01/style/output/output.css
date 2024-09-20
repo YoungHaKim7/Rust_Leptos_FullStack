@@ -554,12 +554,42 @@ video {
   display: none;
 }
 
+.static {
+  position: static;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .inline {
   display: inline;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[64rem\] {
+  max-width: 64rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .rounded {
   border-radius: 0.25rem;
+}
+
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-red-500 {
