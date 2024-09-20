@@ -1,0 +1,59 @@
+.figure {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7fafc; /* equivalent to bg-slate-100 */
+  border-radius: 20px; /* equivalent to rounded-xl */
+  padding: 2rem;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #2d3748; /* equivalent to dark:bg-slate-800 */
+  }
+}
+
+.figure img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 12rem;
+    height: auto;
+  }
+}
+
+.figure blockquote {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.figure blockquote p {
+  font-size: 1.125rem;
+  font-weight: medium;
+}
+
+.figure figcaption {
+  font-weight: medium;
+}
+
+.figure figcaption div:first-child {
+  color: #ffb6d2; /* equivalent to text-sky-500 */
+}
+
+.figure figcaption div:last-child {
+  color: #fff48b; /* equivalent to text-slate-700 */
+}
+
+@media (prefers-color-scheme: dark) {
+ .figure figcaption div:first-child {
+    color: #fff5dd; /* equivalent to dark:text-sky-400 */
+  }
+ .figure figcaption div:last-child {
+    color: #fff096; /* equivalent to dark:text-slate-500 */
+  }
+}

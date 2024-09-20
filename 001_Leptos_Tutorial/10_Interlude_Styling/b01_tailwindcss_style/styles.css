@@ -1,0 +1,141 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: var(--size-4);
+    text-align: center;
+}
+
+p {
+    margin: var(--size-2);
+}
+
+body>picture,
+button,
+p,
+progress,
+label,
+input,
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+nav,
+.my-project-contact-list-contacts-e425927,
+.my-project-tabs-e425927 {
+    display: flex;
+    justify-content: center;
+}
+
+nav a,
+.my-project-contact-list-contacts-e425927 a,
+.my-project-tabs-e425927 a {
+    margin: var(--size-2);
+}
+
+img {
+    height: 100px;
+    width: auto;
+    margin: auto;
+}
+
+html {
+    background-color: black;
+}
+
+
+@import 'default_css/default.module';
+@import 'mainfigure.module';
+
+.my-project-red-c7311a6 {
+  color: red;
+}
+
+.my-project-one-c7311a6 {
+  background-color: blue;
+}
+
+#two {
+  color: blue;
+}
+
+.my-project-three-c7311a6 {
+  background-color: aqua;
+}
+
+.my-project-container_body-c7311a6 {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  height: auto;
+  width: auto;
+  color: white;
+}
+
+
+.my-project-figure-82fb418 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7fafc; /* equivalent to bg-slate-100 */
+  border-radius: 20px; /* equivalent to rounded-xl */
+  padding: 2rem;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #2d3748; /* equivalent to dark:bg-slate-800 */
+  }
+}
+
+.my-project-figure-82fb418 img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 12rem;
+    height: auto;
+  }
+}
+
+.my-project-figure-82fb418 blockquote {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.my-project-figure-82fb418 blockquote p {
+  font-size: 1.125rem;
+  font-weight: medium;
+}
+
+.my-project-figure-82fb418 figcaption {
+  font-weight: medium;
+}
+
+.my-project-figure-82fb418 figcaption div:first-child {
+  color: #ffb6d2; /* equivalent to text-sky-500 */
+}
+
+.my-project-figure-82fb418 figcaption div:last-child {
+  color: #fff48b; /* equivalent to text-slate-700 */
+}
+
+@media (prefers-color-scheme: dark) {
+ .my-project-figure-82fb418 figcaption div:first-child {
+    color: #fff5dd; /* equivalent to dark:text-sky-400 */
+  }
+ .my-project-figure-82fb418 figcaption div:last-child {
+    color: #fff096; /* equivalent to dark:text-slate-500 */
+  }
+}

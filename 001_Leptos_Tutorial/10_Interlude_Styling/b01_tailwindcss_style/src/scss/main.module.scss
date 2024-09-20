@@ -1,0 +1,29 @@
+@import 'default_css/default.module';
+@import 'mainfigure.module';
+
+.red {
+  color: red;
+}
+
+.one {
+  background-color: blue;
+}
+
+#two {
+  color: blue;
+}
+
+.three {
+  background-color: aqua;
+}
+
+.container_body {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+  height: auto;
+  width: auto;
+  color: white;
+}

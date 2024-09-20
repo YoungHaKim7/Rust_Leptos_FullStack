@@ -1,0 +1,61 @@
+@use "../path/to/prelude" as *;
+
+.my-project-figure-82fb418 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7fafc; /* equivalent to bg-slate-100 */
+  border-radius: 20px; /* equivalent to rounded-xl */
+  padding: 2rem;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #2d3748; /* equivalent to dark:bg-slate-800 */
+  }
+}
+
+.my-project-figure-82fb418 img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 12rem;
+    height: auto;
+  }
+}
+
+.my-project-figure-82fb418 blockquote {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.my-project-figure-82fb418 blockquote p {
+  font-size: 1.125rem;
+  font-weight: medium;
+}
+
+.my-project-figure-82fb418 figcaption {
+  font-weight: medium;
+}
+
+.my-project-figure-82fb418 figcaption div:first-child {
+  color: #ffb6d2; /* equivalent to text-sky-500 */
+}
+
+.my-project-figure-82fb418 figcaption div:last-child {
+  color: #fff48b; /* equivalent to text-slate-700 */
+}
+
+@media (prefers-color-scheme: dark) {
+ .my-project-figure-82fb418 figcaption div:first-child {
+    color: #fff5dd; /* equivalent to dark:text-sky-400 */
+  }
+ .my-project-figure-82fb418 figcaption div:last-child {
+    color: #fff096; /* equivalent to dark:text-slate-500 */
+  }
+}
