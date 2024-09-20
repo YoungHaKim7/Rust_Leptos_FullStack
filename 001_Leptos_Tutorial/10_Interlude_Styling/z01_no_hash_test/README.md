@@ -1,12 +1,13 @@
-# Result
+# Run
 
 ```bash
-
+# watch css
+stylance --watch . --output-file ./styles.css
 ```
 
-# Result
 
 ```bash
+trunk serve --open
 
 ```
 
