@@ -107,7 +107,7 @@ kill -9 52474
 kill -9 "PID 프로세스 아디 쓰면됨"
 ```
 
-- ip & process kill다른 방법
+- port & process kill다른 방법
   - [Linux] 특정 포트를 사용하는 프로세스 확인 - https://hbase.tistory.com/m/227
 
 # 하위폴더 특정파일 지우기(ex)target폴더 justfile같은거[|🔝|](#link)
