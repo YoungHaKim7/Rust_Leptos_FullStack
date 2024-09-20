@@ -7,4 +7,13 @@ class="bg-red-500 rounded text-white px-2 py-2"
 
 <hr>
 
+```html
+
+<div class="w-full max-w-[64rem] mx-auto items-center justify-center align-center">
+    "Home Page here"
+</div>
+```
+
+- https://github.com/YoungHaKim7/Rust_Leptos_FullStack/commit/4653a148898098f28e80b3df1b856e14131a83d7
+
 <hr>
