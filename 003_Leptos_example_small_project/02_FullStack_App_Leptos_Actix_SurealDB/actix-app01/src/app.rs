@@ -2,6 +2,12 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
+pub mod db;
+pub mod models;
+pub mod pages;
+pub mod server_functions;
+use pages::{HomePage, TeamPage};
+
 #[component]
 pub fn App() -> impl IntoView {
     // Provides context that manages stylesheets, titles, meta tags, etc.
@@ -14,13 +20,22 @@ pub fn App() -> impl IntoView {
         <link data-trunk rel="tailwind-css" href="/style/input.css"/>
 
         // sets the document title
-        <Title text="Welcome to Leptos"/>
+        <Title text="Full-Stack Dashboard App"/>
 
         // content for this welcome page
         <Router>
             <main>
                 <Routes>
-                    <Route path="" view=HomePage/>
+                    <Route path="/" view=move || {
+                        view! {
+                            <HomePage />
+                        }
+                    }/>
+                    <Route path="/team" view=move || {
+                        view! {
+                            <TeamPage />
+                        }
+                    }/>
                     <Route path="/*any" view=NotFound/>
                 </Routes>
             </main>
@@ -29,17 +44,17 @@ pub fn App() -> impl IntoView {
 }
 
 /// Renders the home page of your application.
-#[component]
-fn HomePage() -> impl IntoView {
-    // Creates a reactive value to update the button
-    let (count, set_count) = create_signal(0);
-    let on_click = move |_| set_count.update(|count| *count += 1);
+// #[component]
+// fn HomePage() -> impl IntoView {
+//     // Creates a reactive value to update the button
+//     let (count, set_count) = create_signal(0);
+//     let on_click = move |_| set_count.update(|count| *count += 1);
 
-    view! {
-        <h1>"Welcome to Leptos!"</h1>
-        <button class="bg-red-500 rounded text-white px-2 py-2" on:click=on_click>"Click Me: " {count}</button>
-    }
-}
+//     view! {
+//         <h1>"Welcome to Leptos!"</h1>
+//         <button class="bg-red-500 rounded text-white px-2 py-2" on:click=on_click>"Click Me: " {count}</button>
+//     }
+// }
 
 /// 404 - Not Found
 #[component]
