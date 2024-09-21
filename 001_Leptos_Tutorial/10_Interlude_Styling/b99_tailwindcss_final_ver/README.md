@@ -1,4 +1,8 @@
-# Result
+# 인스톨 & 실행하기(tailwindCSS)
+
+- Trunk Tailwind CSS세팅 및 공식 사이트
+  - https://trunkrs.dev/assets/#tailwind
+  - https://tailwindcss.com/
 
 - install
 ```bash
