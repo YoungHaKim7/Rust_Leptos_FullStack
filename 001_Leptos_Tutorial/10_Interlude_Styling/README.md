@@ -256,7 +256,7 @@ hash_len = 0
 [[hooks]]
 stage = "post_build"
 command = "sh"
-command_arguments = ["-c", "cp -r imgs/ dist/. "]
+command_arguments = ["-c", "cp -rf imgs/ dist/. "]
 ```
 
 - 출처 원본
