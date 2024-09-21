@@ -2,6 +2,7 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
+pub mod components;
 pub mod db;
 pub mod models;
 pub mod pages;
