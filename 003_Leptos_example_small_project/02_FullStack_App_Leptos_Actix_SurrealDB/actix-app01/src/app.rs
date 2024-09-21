@@ -43,19 +43,6 @@ pub fn App() -> impl IntoView {
     }
 }
 
-/// Renders the home page of your application.
-// #[component]
-// fn HomePage() -> impl IntoView {
-//     // Creates a reactive value to update the button
-//     let (count, set_count) = create_signal(0);
-//     let on_click = move |_| set_count.update(|count| *count += 1);
-
-//     view! {
-//         <h1>"Welcome to Leptos!"</h1>
-//         <button class="bg-red-500 rounded text-white px-2 py-2" on:click=on_click>"Click Me: " {count}</button>
-//     }
-// }
-
 /// 404 - Not Found
 #[component]
 fn NotFound() -> impl IntoView {
