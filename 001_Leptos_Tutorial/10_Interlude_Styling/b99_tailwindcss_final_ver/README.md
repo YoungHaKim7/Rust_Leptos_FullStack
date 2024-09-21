@@ -49,3 +49,16 @@ module.exports = {
 @tailwind utilities;
 ```
 
+<hr>
+
+- index.html
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link data-trunk rel="tailwind-css" href="style/input.css" />
+    </head>
+    <body></body>
+</html>
+```
