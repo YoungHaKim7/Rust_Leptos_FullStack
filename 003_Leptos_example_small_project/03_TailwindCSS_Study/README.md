@@ -31,6 +31,8 @@ class="bg-red-500 rounded text-white px-2 py-2"
 
 <hr>
 
+<hr>
+
 ```html
 
 <div class="w-full max-w-[64rem] mx-auto items-center justify-center align-center">
@@ -235,6 +237,199 @@ class="bg-red-500 rounded text-white px-2 py-2"
 
 
 ```
+
+
+<hr>
+
+```html
+const INPUT_STYLE: &str = "w-full h-12 bg-[#333333] pr-r pl-6 py-4 text-white mt-6 outline-none focus:outline-none focus:pl-7 transition-all duration-1000 ease-in-out";
+const CANCEL_BUTTON_STYLE: &str = "mt-10 bg-[#555555] px-8 py-2 rounded text-white mr-3 transition-all duration-1000 ease-in-out hover:bg-[#666666]";
+const ADD_BUTTON_STYLE: &str = "mt-10 bg-[#7734e7] px-8 py-2 rounded text-white transition-all duration-1000 ease-in-out hover:bg-[#8448e9]";
+const NO_ERROR_STYLE: &str = "flex flex-col bg-[#222222] border-t-8 border-[#7734e7] px-6 pt-5 h-[32rem] w-full max-w-[36rem] z-50 -mt-2 fixed z-50";
+const ERROR_STYLE: &str = "flex flex-col bg-[#222222] border-t-8 border-[#7734e7] px-6 pt-5 h-[32rem] w-full max-w-[36rem] z-50 -mt-2 fixed z-50";
+
+
+<div class="flex flex-col w-full h-full z-50 mx-auto items-center align-center">
+    <div class={move || {
+        if if_error() { ERROR_STYLE }
+        else { NO_ERROR_STYLE }
+    }}>
+      <Show when=move || { if_error() }>
+          <p class="text-white bg-red-500 rounded w-full h-12 px-5 py-3 transition-all duration-750 ease-in-out">
+              { error_message() }
+          </p>
+      </Show>
+      <p class="text-white pt-5">"Add New Employee"</p>
+    </div>
+</div>
+
+<input class="flex flex-row w-full items-right justify-right"/>
+    <button on:click=on_close class=CANCEL_BUTTON_STYLE>
+        "Cancel"
+    </button>
+    <button on:click=on_click class=ADD_BUTTON_STYLE>
+        "Add"
+    </button>
+
+
+```
+
+- https://github.com/YoungHaKim7/Rust_Leptos_FullStack/commit/fbfa57c522aca9fc72fd6b2f16bc719cbd640c83
+
+
+```css
+
+.z-50 {
+  z-index: 50;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+
+.h-\[29rem\] {
+  height: 29rem;
+}
+.h-\[32rem\] {
+  height: 32rem;
+}
+.h-full {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
+}
+
+
+
+.max-w-\[36rem\] {
+  max-width: 36rem;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+
+.border-t-8 {
+  border-top-width: 8px;
+}
+.border-\[\#7734e7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(119 52 231 / var(--tw-border-opacity));
+}
+
+
+
+.bg-\[\#333333\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+}
+.bg-\[\#555555\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 85 85 / var(--tw-bg-opacity));
+}
+.bg-\[\#222222\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.pt-8 {
+  padding-top: 2rem;
+}
+
+
+
+.pl-6 {
+  padding-left: 1.5rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:bg-\[\#8448e9\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 72 233 / var(--tw-bg-opacity));
+}
+
+
+.hover\:bg-\[\#666666\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 102 102 / var(--tw-bg-opacity));
+}
+.focus\:pl-7:focus {
+  padding-left: 1.75rem;
+}
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+```
+
+
+<hr>
 
 
 <hr>
