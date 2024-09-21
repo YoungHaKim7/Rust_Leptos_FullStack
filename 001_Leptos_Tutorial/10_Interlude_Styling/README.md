@@ -19,7 +19,7 @@
       - [Trunk(sass/scss, tailwind, css & icons 기타등등) 관련 설정 설명서](https://trunkrs.dev/assets/#css)
         - [위 내용과 동일 eBook형태](https://trunkrs.dev/guide/assets/index.html)
 
-- [`trunk serve --open`할때 이미지 따로 cp수동으로 넣는거 귀찮아서 hook로 넣는방법 힌트]()
+- [`trunk serve --open`할때 이미지 따로 cp수동으로 넣는거 귀찮아서 hook로 넣는방법 힌트](#trunk-serve---open할때-이미지-따로-cp수동으로-넣는거-귀찮아서-hook로-넣는방법-힌트)
 
 <hr>
 
