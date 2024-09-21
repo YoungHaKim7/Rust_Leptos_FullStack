@@ -435,6 +435,9 @@ const ERROR_STYLE: &str = "flex flex-col bg-[#222222] border-t-8 border-[#7734e7
 
 <hr/>
 
+- https://github.com/YoungHaKim7/Rust_Leptos_FullStack/commit/b6969657af7db5bc2b8b32d8aa7f852581139dc8
+- 
+
 ```html
 <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
   <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="test.jpg" alt="" width="384" height="512"/>
