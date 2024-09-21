@@ -3,6 +3,24 @@
     <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
 </picture>
 
+<hr>
+
+# 3개 기본 실행
+
+```bash
+# tailwindcss
+$ npm run watch
+    
+# leptos watch모드로 시작
+$ cargo leptos watch
+
+
+# SQL 서버 시작(SurrealDB)
+$ surreal start --log trace --user root --pass root memory
+```
+
+<hr>
+
 # Leptos Starter Template
 
 This is a template for use with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [cargo-leptos](https://github.com/akesson/cargo-leptos) tool.
