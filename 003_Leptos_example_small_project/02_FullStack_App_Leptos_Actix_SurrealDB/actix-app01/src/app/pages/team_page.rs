@@ -1,6 +1,6 @@
 use leptos::*;
 
-use crate::app::components::Header;
+use crate::app::components::{AddPersonModal, Header};
 
 #[component]
 pub fn TeamPage() -> impl IntoView {
@@ -20,6 +20,15 @@ pub fn TeamPage() -> impl IntoView {
                 <div class="mt-20">
 
                     <div class="text-white flex flex-col w-full mx-auto items-center justify-center z-25">
+
+                        <Show when=move || { if_show_modal()}>
+                            <AddPersonModal
+                                set_if_show_modal
+                            />
+                        </Show>
+
+
+
                         <div class="flex flex-row flex-col w-full mx-auto items-center justify-center">
 
                             <div class="flex flex-row w-full max-w-[52rem]">
