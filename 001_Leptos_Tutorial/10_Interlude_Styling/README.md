@@ -19,6 +19,8 @@
       - [Trunk(sass/scss, tailwind, css & icons 기타등등) 관련 설정 설명서](https://trunkrs.dev/assets/#css)
         - [위 내용과 동일 eBook형태](https://trunkrs.dev/guide/assets/index.html)
 
+- [`trunk serve --open`할때 이미지 따로 cp수동으로 넣는거 귀찮아서 hook로 넣는방법 힌트]()
+
 <hr>
 
 - [stylance말고 다른거 기타 등등etc](#rcss-bundler기타etc등등다른거) 
@@ -244,5 +246,27 @@ hash_len = 0
 
 # rcss-bundler기타etc..등등다른거[|🔝|](#link)
   - https://lib.rs/crates/rcss-bundler
+
+<hr>
+
+# `trunk serve --open`할때 이미지 따로 cp수동으로 넣는거 귀찮아서 hook로 넣는방법 힌트[|🔝|](#link)
+
+- 테스트 예정
+```
+[[hooks]]
+stage = "post_build"
+command = "sh"
+command_arguments = ["-c", "cp -r imgs/ dist/. "]
+```
+
+- 출처 원본
+```
+[[hooks]]
+stage = "post_build"
+command = "sh"
+command_arguments = ["-c", "cp -r ./dist/* $TRUNK_STAGING_DIR"]
+```
+
+출처 : https://github.com/trunk-rs/trunk/issues/9
 
 <hr>
