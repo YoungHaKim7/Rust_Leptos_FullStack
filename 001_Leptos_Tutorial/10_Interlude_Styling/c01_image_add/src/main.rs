@@ -1,21 +1,21 @@
 use leptos::{component, view, IntoView};
-use leptos_image::Image;
+// use leptos_image::Image;
 use stylance::import_style;
 
 import_style!(style, "main.module.scss");
 
-#[component]
-pub fn MyImage() -> impl IntoView {
-    view! {
-        <Image
-            src="/imgs/test.jpg"
-            blur=true
-            width=750
-            height=500
-            quality=85
-        />
-    }
-}
+// #[component]
+// pub fn MyImage() -> impl IntoView {
+//     view! {
+//         <Image
+//             src="/imgs/test.jpg"
+//             blur=true
+//             width=750
+//             height=500
+//             quality=85
+//         />
+//     }
+// }
 
 #[component]
 fn App() -> impl IntoView {
