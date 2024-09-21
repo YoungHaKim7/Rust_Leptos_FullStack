@@ -34,6 +34,26 @@
 
 <hr>
 
+
+<hr>
+
+- CSS & SCSS 세팅관련
+  - stylance 세팅(난 이게 더 좋다. 러스트로 만든거라 ㅋ)
+    - [stylance-rs세팅 example](./001_Leptos_Tutorial/10_Interlude_Styling/z01_no_hash_test)
+    ```bash
+    # stylance watch css
+    stylance --watch . --output-file ./styles.css
+    ``` 
+  - tailwindCSS 세팅 
+    - [tailwindcss세팅 example](./001_Leptos_Tutorial/10_Interlude_Styling/b99_tailwindcss_final_ver)
+    ```bash
+    # tailwindcss watch css
+    # package.json안에 작성필요
+    npm run watch
+    ```
+
+<hr>
+
 - Leptos 외국 관련글모음
   - [242402_Full Stack Rust with Leptos](https://benw.is/posts/full-stack-rust-with-leptos) 
 
