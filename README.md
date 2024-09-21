@@ -34,6 +34,11 @@
 
 <hr>
 
+- Leptos 외국 관련글모음
+  - [242402_Full Stack Rust with Leptos](https://benw.is/posts/full-stack-rust-with-leptos) 
+
+<hr>
+
 # Rust_Leptos_FullStack
 - Leptos
   - https://leptos.dev/
