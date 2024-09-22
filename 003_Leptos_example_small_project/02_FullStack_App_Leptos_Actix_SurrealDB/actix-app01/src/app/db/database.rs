@@ -14,8 +14,8 @@ cfg_if::cfg_if! {
 
             let _ = DB.connect::<Ws>("127.0.0.1:8000").await;
             let _ = DB.signin(Root {
-                username: "Root",
-                password: "Root",
+                username: "root",
+                password: "root",
             })
             .await;
             let _ = DB.use_ns("surreal").use_db("person").await;

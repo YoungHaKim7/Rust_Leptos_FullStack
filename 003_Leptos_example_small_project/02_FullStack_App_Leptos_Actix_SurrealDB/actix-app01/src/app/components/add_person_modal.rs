@@ -1,15 +1,23 @@
 use leptos::*;
 use validator::Validate;
 
-use crate::app::{models::AddPersonRequest, server_functions::persons::add_person};
+use crate::app::{
+    components::{Toast, ToastMessage, ToastMessageType},
+    models::AddPersonRequest,
+    server_functions::persons::add_person,
+};
 
 #[component]
-pub fn AddPersonModal(set_if_show_modal: WriteSignal<bool>) -> impl IntoView {
+pub fn AddPersonModal(
+    set_if_show_modal: WriteSignal<bool>,
+    set_if_show_added: WriteSignal<bool>,
+    set_toast_message: WriteSignal<ToastMessage>,
+) -> impl IntoView {
     const INPUT_STYLE: &str = "w-full h-12 bg-[#333333] pr-r pl-6 py-4 text-white mt-6 outline-none focus:outline-none focus:pl-7 transition-all duration-1000 ease-in-out";
 
-    const CANCEL_BUTTON_STYLE: &str = "mt-10 bg-[#555555] px-8 py-2 rounded text-white mr-3 transition-all duration-1000 ease-in-out hover:bg-[#666666]";
+    const CANCEL_BUTTON_STYLE: &str = "rounded mt-10 bg-[#555555] px-1 py-1 text-white mr-1 transition-all duration-1000 ease-in-out hover:bg-[#666666]";
 
-    const ADD_BUTTON_STYLE: &str = "mt-10 bg-[#7734e7] px-8 py-2 rounded text-white transition-all duration-1000 ease-in-out hover:bg-[#8448e9]";
+    const ADD_BUTTON_STYLE: &str = "rounded mt-10 bg-[#7734e7] px-3 py-3 text-white transition-all duration-1000 ease-in-out hover:bg-[#8448e9]";
 
     const NO_ERROR_STYLE: &str = "flex flex-col bg-[#222222] border-t-8 border-[#7734e7] px-6 pt-5 h-[32rem] w-full max-w-[36rem] z-50 -mt-2 fixed z-50";
 
@@ -50,6 +58,14 @@ pub fn AddPersonModal(set_if_show_modal: WriteSignal<bool>) -> impl IntoView {
                     match add_result {
                         Ok(_added_person) => {
                             set_if_show_modal(false);
+
+                            set_toast_message(ToastMessage::create(
+                                ToastMessageType::NewMemberAdded,
+                            ));
+
+                            // setting this to true to make the toast
+                            // for "new member added " appear
+                            set_if_show_added(true);
                         }
                         Err(e) => {
                             eprintln!("Error adding: {:?}", e);
@@ -105,14 +121,13 @@ pub fn AddPersonModal(set_if_show_modal: WriteSignal<bool>) -> impl IntoView {
                       }
                   />
                   <div class="flex flex-row w-full items-right justify-right"/>
-                      <button on:click=on_close class=CANCEL_BUTTON_STYLE>
-                          "Cancel"
-                      </button>
-                      <button on:click=on_click class=ADD_BUTTON_STYLE>
-                          "Add"
-                      </button>
+                    <button on:click=on_click class=ADD_BUTTON_STYLE>
+                        "Add"
+                    </button>
+                    <button on:click=on_close class=CANCEL_BUTTON_STYLE>
+                        "Cancel"
+                    </button>
                   </div>
-            </div>
         </div>
     }
 }
