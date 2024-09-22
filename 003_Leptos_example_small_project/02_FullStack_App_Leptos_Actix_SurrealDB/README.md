@@ -1,4 +1,4 @@
-- 1:36:03 부터 보면됨240921
+- 2:12:28 부터 보면됨240923
 
 # 240905)How to Build A Full Stack Rust Dashboard App with Leptos, Actix Web & SurrealDB (Full Tutorial) | WhiteSponge
 - https://youtu.be/DQB-cJPYChg?si=I9OimG7SW5XAz25N
