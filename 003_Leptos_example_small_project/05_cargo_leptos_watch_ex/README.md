@@ -5,10 +5,20 @@
 cargo leptos watch  
 
 
-# 일단 수동으로 쓰자 상단에 @use 이거 지워야 된다. 왜 그런지 이유는 못찾음
+# watch 
+stylance --watch . --output-file ./styles.css
+
+# 수동 mode
 stylance . --output-file ./styles.css
 
 
-# watch 모드 로해야하는데 @use지워야 되서 일단 수동으로 해야함.
-stylance --watch . --output-file ./styles.css
+```
+
+
+# 사전 설치(이거 안해줘서 에러 났음 아 어이없네)
+
+```bash
+# (should be optional in future)
+npm install -g sass - install dart-sass 
+
 ```
