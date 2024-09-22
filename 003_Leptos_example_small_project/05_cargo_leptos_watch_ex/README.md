@@ -19,6 +19,6 @@ stylance . --output-file ./styles.css
 
 ```bash
 # (should be optional in future)
-npm install -g sass - install dart-sass 
+npm install -g sass
 
 ```
