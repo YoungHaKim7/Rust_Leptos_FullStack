@@ -89,6 +89,7 @@
 - Frontend
   - [SCSS_stylance-rs 세팅하기](#scoped-css-style-imports-for-rust)
     - [SCSS + Stylance-rs + RustLeptos조합](./001_Leptos_Tutorial/10_Interlude_Styling) 
+       - [SCSS + Stylance-rs _ Image까지 나오는 조합 굿 굿](./003_Leptos_example_small_project/05_cargo_leptos_watch_ex/a01-cargo-leptos-watch-ex)
   - [Tailwind CSS](#tailwind-css)
     - [기본 폼Tailwind CSS](https://github.com/tailwindlabs/tailwindcss-forms) 
     - [Awesome-TailwindCSS](#awesome-tailwindcss)
