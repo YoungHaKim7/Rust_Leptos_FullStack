@@ -48,6 +48,7 @@
     # stylance watch css
     stylance --watch . --output-file ./styles.css
     ``` 
+      - [SCSS + Stylance-rs _ Image까지 나오는 조합 굿 굿](./003_Leptos_example_small_project/05_cargo_leptos_watch_ex/a01-cargo-leptos-watch-ex)
   - tailwindCSS 세팅 
     - [tailwindcss세팅 example](./001_Leptos_Tutorial/10_Interlude_Styling/b99_tailwindcss_final_ver)
     ```bash
