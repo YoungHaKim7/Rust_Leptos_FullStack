@@ -42,11 +42,11 @@ fn HomePage() -> impl IntoView {
         <button on:click=on_click>"Click Me: " {count}</button>
 
         <p class=style::one>"test p scss"</p>
-            <div class="one"> one BackGround color Blue</div>
-                <h1 id="two">"Hello"</h1>
-                <h2 class="three">"World"</h2>
-                <h3 class="red">"friends!" </h3>
-                <img src="./test.jpg"/>
+            <div class="one-"> one BackGround color Blue</div>
+                <h1 id="two-">"Hello"</h1>
+                <h2 class="three-">"World"</h2>
+                <h3 class="red-">"friends!" </h3>
+                <img src="test.jpg"/>
     }
 }
 
