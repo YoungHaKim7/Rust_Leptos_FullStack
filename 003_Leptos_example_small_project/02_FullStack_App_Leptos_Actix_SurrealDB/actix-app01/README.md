@@ -7,8 +7,19 @@
 
 # 3개 기본 실행
 
+- install
+
 ```bash
-# tailwindcss
+# tailwindcss npm install
+npm install -D tailwindcss
+
+npx tailwindcss init
+```
+
+- run
+
+```bash
+# tailwindcss watch
 $ npm run watch
     
 # leptos watch모드로 시작

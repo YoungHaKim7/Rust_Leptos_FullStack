@@ -1,6 +1,8 @@
 use leptos::*;
 use validator::Validate;
 
+use crate::app::{models::AddPersonRequest, server_functions::persons::add_person};
+
 #[component]
 pub fn AddPersonModal(set_if_show_modal: WriteSignal<bool>) -> impl IntoView {
     const INPUT_STYLE: &str = "w-full h-12 bg-[#333333] pr-r pl-6 py-4 text-white mt-6 outline-none focus:outline-none focus:pl-7 transition-all duration-1000 ease-in-out";
@@ -29,7 +31,38 @@ pub fn AddPersonModal(set_if_show_modal: WriteSignal<bool>) -> impl IntoView {
     };
 
     // to add the new person
-    let on_click = move |_| {};
+    let on_click = move |_| {
+        let add_person_request = AddPersonRequest::new(
+            person_name(),
+            person_title(),
+            person_level(),
+            compensation().parse::<i32>().expect("Numbers only"),
+        );
+
+        let is_valid = add_person_request.validate();
+
+        match is_valid {
+            Ok(_) => {
+                spawn_local(async move {
+                    let add_result = add_person(add_person_request).await;
+
+                    // we get the result back and do something with it
+                    match add_result {
+                        Ok(_added_person) => {
+                            set_if_show_modal(false);
+                        }
+                        Err(e) => {
+                            eprintln!("Error adding: {:?}", e);
+                        }
+                    };
+                });
+            }
+            Err(_) => {
+                set_if_error(true);
+                set_error_message(String::from("All fields are required"))
+            }
+        }
+    };
 
     view! {
         <div class="flex flex-col w-full h-full z-50 mx-auto items-center align-center">
