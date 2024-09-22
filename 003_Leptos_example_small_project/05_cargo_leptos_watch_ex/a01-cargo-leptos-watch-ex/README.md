@@ -22,7 +22,7 @@ stylance . --output-file ./styles.css
 ```
 
 
-# 사전 설치(이거 안해줘서 에러 났음 아 어이없네)
+# (아직에러해결못함)사전 설치(이거 안해줘서 에러 났음 아 어이없네)
 
 ```bash
 # (should be optional in future) 이것만 설치하면됨. dart-sass는 deprecated.
