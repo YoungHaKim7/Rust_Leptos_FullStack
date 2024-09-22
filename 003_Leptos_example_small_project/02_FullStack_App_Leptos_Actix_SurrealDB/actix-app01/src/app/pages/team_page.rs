@@ -1,6 +1,9 @@
 use leptos::*;
 
-use crate::app::components::{AddPersonModal, Header, Toast, ToastMessage};
+use crate::app::{
+    components::{AddPersonModal, Header, Toast, ToastMessage},
+    server_functions::get_persons,
+};
 
 #[component]
 pub fn TeamPage() -> impl IntoView {
@@ -10,6 +13,8 @@ pub fn TeamPage() -> impl IntoView {
 
     let (if_show_toast, set_if_show_toast) = create_signal(false);
     let (toast_message, set_toast_message) = create_signal(ToastMessage::new());
+
+    let get_persons_info = create_resource(|| (), |_| async move { get_persons().await });
 
     let on_click = move |_| {
         set_if_show_modal(!if_show_modal());
@@ -52,6 +57,29 @@ pub fn TeamPage() -> impl IntoView {
                                 </button>
 
                             </div>
+
+                            <Suspense fallback=move || {
+                                view! { <p>"Loading..."</p>}
+                            }>
+                                <div class="flex flex-col w-full max-w-[52rem] mt-6">
+                                {
+                                    move || {
+                                        get_persons_info.get().map(|data| {
+                                            match data {
+                                                Ok (persons_data) => {
+                                                    persons_data.iter().map(|each_person| view! {
+                                                        <div>{&each_person.name}</div>
+
+                                                    }).collect_view()
+                                                },
+                                                Err(_) =>
+                                                    view ! {<div></div>}.into_view()
+                                            }
+                                        })
+                                    }
+                                }
+                                </div>
+                            </Suspense>
                         </div>
                     </div>
                 </div>
