@@ -46,7 +46,7 @@ fn HomePage() -> impl IntoView {
                 <h1 id="two-">"Hello"</h1>
                 <h2 class="three-">"World"</h2>
                 <h3 class="red-">"friends!" </h3>
-                <img src="test.jpg"/>
+                <img src="./assets/test.jpg"/>
     }
 }
 
