@@ -12,6 +12,7 @@
 
 - [WASM우수한 성능에 대해The Truth about Rust/WebAssembly Performance |Greg Johnsto](https://youtu.be/4KtotxNAwME?si=9MefecdXc_ppF0rM)
   - [성능 비교하는 사이트](https://krausest.github.io/js-framework-benchmark/2022/table_chrome_103.0.5060.53_osx.html)
+    - [leptos-rs생산적인 토론을 하는 곳](https://github.com/leptos-rs/leptos/discussions/125)
 
 <hr>
 
