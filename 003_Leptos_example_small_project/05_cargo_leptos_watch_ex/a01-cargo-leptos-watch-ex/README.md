@@ -33,6 +33,16 @@ npm install -g sass
 - dart-sass (This package has been deprecated. This package has been renamed to 'sass'.)sass로 써야함. deprecated되었음.
   - https://www.npmjs.com/package/dart-sass
 
+# macOS(Homebrew)
+- Install on Mac OS X or Linux (Homebrew)
+  - If you use the Homebrew package manager for Mac OS X or Linux, you can install Dart Sass by running
+    - https://sass-lang.com/install/
+
+```bash
+brew install sass/sass/sass
+```
+
+<br/>
 
 # Leptos Starter Template
 
