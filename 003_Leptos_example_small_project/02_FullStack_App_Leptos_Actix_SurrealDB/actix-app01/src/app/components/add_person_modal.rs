@@ -99,20 +99,20 @@ pub fn AddPersonModal(set_if_show_modal: WriteSignal<bool>) -> impl IntoView {
                   />
                   <input type="text" placeholder="Compensation"
                       class=INPUT_STYLE
-                      value=person_level
+                      value=compensation
                       on:input=move |event| {
                           set_compensation(event_target_value(&event));
                       }
                   />
-                  <input class="flex flex-row w-full items-right justify-right"/>
+                  <div class="flex flex-row w-full items-right justify-right"/>
                       <button on:click=on_close class=CANCEL_BUTTON_STYLE>
                           "Cancel"
                       </button>
                       <button on:click=on_click class=ADD_BUTTON_STYLE>
                           "Add"
                       </button>
+                  </div>
             </div>
-
         </div>
     }
 }
