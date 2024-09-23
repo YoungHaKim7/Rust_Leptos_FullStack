@@ -93,6 +93,10 @@
     - Leptos example
       - https://github.com/leptos-rs/leptos/tree/main/examples
 
+- Leptos-Use Guide(Collection of essential Leptos utilities)
+  - https://leptos-use.rs/
+    - https://github.com/synphonyte/leptos-use
+
 <hr>
 
 - [암기해야할 주요 기능들](#암기해야할-주요-기능들)
