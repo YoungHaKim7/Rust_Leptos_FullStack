@@ -57,6 +57,19 @@
     # package.json안에 작성필요
     npm run watch
     ```
+    - install
+    ```bash
+    npm install -D tailwindcss
+    npx tailwindcss init
+    ```
+
+    - run
+    ```
+    trunk serve --open
+    
+    npm run watch
+    ```
+
 
 <hr>
 
