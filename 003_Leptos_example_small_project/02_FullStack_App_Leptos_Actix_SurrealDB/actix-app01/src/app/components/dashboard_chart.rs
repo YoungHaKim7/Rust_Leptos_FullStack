@@ -13,7 +13,7 @@ pub fn DashboardChart(persons_data: Vec<Person>) -> impl IntoView {
     // for counting the total number of team members
     let team_count = retrieved_persons_data.len().to_string();
 
-    // for calculating and adding totoal cost for all the team members
+    // for calculating and adding total cost for all the team members
     let mut total_cost = 0;
 
     // for identifying who is the latest to join
