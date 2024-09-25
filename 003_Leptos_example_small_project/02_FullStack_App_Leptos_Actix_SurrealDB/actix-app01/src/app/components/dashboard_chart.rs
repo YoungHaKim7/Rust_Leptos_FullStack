@@ -5,8 +5,6 @@ use std::rc::Rc;
 
 use crate::app::{components::DashboardWidget, models::Person};
 
-use super::PersonRow;
-
 #[component]
 pub fn DashboardChart(persons_data: Vec<Person>) -> impl IntoView {
     // create a reference counting pointer to our actual persons data so
