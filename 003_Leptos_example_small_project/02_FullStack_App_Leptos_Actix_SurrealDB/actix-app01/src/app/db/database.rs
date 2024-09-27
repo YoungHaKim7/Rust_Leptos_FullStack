@@ -1,6 +1,4 @@
-use leptos::svg::Title;
-
-use crate::app::components::dashboard_chart::DashboardChartPropsBuilder_Error_Missing_required_field_persons_data;
+use crate::app::errors::PersonError;
 
 cfg_if::cfg_if! {
 
@@ -58,7 +56,7 @@ cfg_if::cfg_if! {
             }
         }
 
-        pub async fn update_person(uuid: String, title: String, level: String, compensation: i32) -> Option<Person> {
+        pub async fn update_person(uuid: String, title: String, level: String, compensation: i32) -> Result<Option<Person>, PersonError> {
 
             open_db_connection().await;
 
@@ -86,15 +84,15 @@ cfg_if::cfg_if! {
                                 DB.invalidate().await;
                                 match updated_user {
                                     Ok(returned_user) => returned__user,
-                                    Err(_) => None
+                                    Err(_) => Err(PersonError::PersonUpdatefailure)
                                 }
                         },
-                        None => None
+                        None => Err(PersonError::PersonUpdatefailure)
                     }
                 },
                 Err(_) => {
                     DB.invalidate().await;
-                    None
+                    Err(PersonError::PersonNotFound)
                 }
             }
         }
