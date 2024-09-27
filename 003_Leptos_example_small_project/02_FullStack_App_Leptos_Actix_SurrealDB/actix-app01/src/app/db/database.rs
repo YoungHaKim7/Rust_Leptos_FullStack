@@ -1,3 +1,7 @@
+use leptos::svg::Title;
+
+use crate::app::components::dashboard_chart::DashboardChartPropsBuilder_Error_Missing_required_field_persons_data;
+
 cfg_if::cfg_if! {
 
     if #[cfg(feature = "ssr")] {
@@ -51,6 +55,47 @@ cfg_if::cfg_if! {
             match results {
                 Ok(created_person) => created_person,
                 Err(_) => None
+            }
+        }
+
+        pub async fn update_person(uuid: String, title: String, level: String, compensation: i32) -> Option<Person> {
+
+            open_db_connection().await;
+
+            // first we try to find the person in the database
+            let find_person: Result<Option<Person>, Error> =
+                DB.select(("person", &uuid)).await;
+            match find_person {
+
+                Ok(found) => {
+
+                    // if we found the person, we update him/her
+                    match found {
+                        Some(found_person) => {
+
+                            let updated_user: Result<Option<Person>, Error> =
+                                DB.update(("person", &uuid))
+                                    .merge(Person::new(
+                                        uuid,
+                                        found_person.name,
+                                        title,
+                                        level,
+                                        compensation,
+                                    ))
+                                    .await;
+                                DB.invalidate().await;
+                                match updated_user {
+                                    Ok(returned_user) => returned__user,
+                                    Err(_) => None
+                                }
+                        },
+                        None => None
+                    }
+                },
+                Err(_) => {
+                    DB.invalidate().await;
+                    None
+                }
             }
         }
     }

@@ -4,6 +4,7 @@ use leptos_router::*;
 
 pub mod components;
 pub mod db;
+pub mod errors;
 pub mod models;
 pub mod pages;
 pub mod server_functions;
