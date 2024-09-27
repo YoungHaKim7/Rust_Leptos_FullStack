@@ -1,10 +1,11 @@
-use crate::app::errors::PersonError;
-
 cfg_if::cfg_if! {
 
     if #[cfg(feature = "ssr")] {
 
-        use crate::app::models::Person;
+        use crate::app::{
+            models::Person,
+            errors::PersonError
+        };
         use surrealdb::engine::remote::ws::{Client, Ws};
         use surrealdb::opt::auth::Root;
         use surrealdb::{Error, Surreal};
