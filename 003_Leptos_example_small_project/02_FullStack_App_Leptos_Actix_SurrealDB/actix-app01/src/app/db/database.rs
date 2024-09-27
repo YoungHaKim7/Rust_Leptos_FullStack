@@ -72,7 +72,7 @@ cfg_if::cfg_if! {
                     match found {
                         Some(found_person) => {
 
-                            let updated_user: Result<Option<Person>, Error> =
+                            let updated_user: Result<Option<Person>, PersonError> =
                                 DB.update(("person", &uuid))
                                     .merge(Person::new(
                                         uuid,
@@ -84,7 +84,7 @@ cfg_if::cfg_if! {
                                     .await;
                                 DB.invalidate().await;
                                 match updated_user {
-                                    Ok(returned_user) => returned__user,
+                                    Ok(returned_user) => Ok(returned_user),
                                     Err(_) => Err(PersonError::PersonUpdatefailure)
                                 }
                         },
