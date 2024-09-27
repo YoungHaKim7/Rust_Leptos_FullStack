@@ -8,11 +8,19 @@ pub enum PersonError {
     PersonNotFound,
 
     #[error("failed to update member")]
-    PersonUpdatefailure,
+    PersonUpdateFailure,
 
     #[error("failed to create member")]
     PersonCreationFailure,
 }
+
+// struct ErrorMessage;
+
+// impl ErrorMessage {
+//     fn from(error: &str) -> String {
+//         error.to_string()
+//     }
+// }
 
 pub type ErrorMessage = String;
 
@@ -24,7 +32,7 @@ impl ResponseErrorTrait for ErrorMessage {
     fn create(person_error: PersonError) -> ErrorMessage {
         match person_error {
             PersonError::PersonNotFound => ErrorMessage::from("member not found"),
-            PersonError::PersonUpdatefailure => ErrorMessage::from("failed to update member"),
+            PersonError::PersonUpdateFailure => ErrorMessage::from("failed to update member"),
             PersonError::PersonCreationFailure => ErrorMessage::from("failed to create member"),
         }
     }

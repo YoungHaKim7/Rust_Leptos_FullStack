@@ -1,4 +1,8 @@
-use crate::app::models::{person::Person, AddPersonRequest};
+use crate::app::{
+    components::Toast,
+    errors::{ErrorMessage, ResponseErrorTrait},
+    models::{person::Person, AddPersonRequest, EditPersonRequest},
+};
 use leptos::*;
 use serde::*;
 
@@ -26,11 +30,39 @@ pub async fn add_person(add_person_request: AddPersonRequest) -> Result<Person, 
     }
 }
 
+#[server(EditPerson, "/api")]
+pub async fn edit_person(edit_person_request: EditPersonRequest) -> Result<Person, ServerFnError> {
+    let updated = edit_team_person(
+        edit_person_request.uuid,
+        edit_person_request.title,
+        edit_person_request.level,
+        edit_person_request.compensation,
+    )
+    .await;
+
+    match updated {
+        Ok(updated_result) => {
+            // if successfully returned a Some in an Option of a Person
+            if let Some(updated_person) = updated_result {
+                Ok(updated_person)
+            } else {
+                Err(ServerFnError::Args(ErrorMessage::create(
+                    PersonError::PersonUpdateFailure,
+                )))
+            }
+        }
+        Err(person_error) => Err(ServerFnError::Args(ErrorMessage::create(person_error))),
+    }
+}
+
 cfg_if::cfg_if! {
 
     if #[cfg(feature = "ssr")] {
 
-        use crate::app::db::database;
+        use crate::app::{
+            db::database,
+            errors::PersonError,
+        };
         use chrono::{DateTime, Local};
         use uuid::Uuid;
 
@@ -68,6 +100,13 @@ cfg_if::cfg_if! {
             );
 
             database::add_person(new_person).await
+        }
+
+        pub async fn edit_team_person<T>(uuid: T, title: T, level: T, compensation: i32)-> Result<Option<Person>, PersonError>
+        where
+            T:Into<String>
+        {
+            database::update_person(uuid.into(), title.into(), level.into(), compensation).await
         }
     }
 }
