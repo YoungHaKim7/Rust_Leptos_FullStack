@@ -102,3 +102,74 @@ This may be useful for integrating external tools which require a static site, e
 ## Licensing
 
 This template itself is released under the Unlicense. You should replace the LICENSE for your own application with an appropriate license if you plan to release it publicly.
+
+# 해결해야함
+
+```bash
+warning: unused import: `ErrorMessage`
+ --> src/app/db/database.rs:7:22
+  |
+7 |             errors::{ErrorMessage,PersonError}
+  |                      ^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `serde::*`
+ --> src/app/server_functions/persons.rs:7:5
+  |
+7 | use serde::*;
+  |     ^^^^^^^^
+
+warning: unused import: `DateTime`
+  --> src/app/server_functions/persons.rs:66:22
+   |
+66 |         use chrono::{DateTime, Local};
+   |                      ^^^^^^^^
+
+error[E0034]: multiple applicable items in scope
+  --> src/app/server_functions/persons.rs:49:55
+   |
+49 |                 Err(ServerFnError::Args(ErrorMessage::create(
+   |                                                       ^^^^^^ multiple `create` found
+   |
+note: candidate #1 is defined in an impl of the trait `ResponseErrorTrait` for the type `std::string::String`
+  --> src/app/errors/person_errors.rs:32:5
+   |
+32 |     fn create(person_error: PersonError) -> ErrorMessage {
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+note: candidate #2 is defined in an impl of the trait `Toast` for the type `std::string::String`
+  --> src/app/components/toast.rs:23:5
+   |
+23 |     fn create(toast_message_type: ToastMessageType) -> ToastMessage {
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: use fully-qualified syntax to disambiguate
+   |
+49 |                 Err(ServerFnError::Args(<std::string::String as ResponseErrorTrait>::create(
+   |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+49 |                 Err(ServerFnError::Args(<std::string::String as Toast>::create(
+   |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+error[E0034]: multiple applicable items in scope
+  --> src/app/server_functions/persons.rs:54:68
+   |
+54 |         Err(person_error) => Err(ServerFnError::Args(ErrorMessage::create(person_error))),
+   |                                                                    ^^^^^^ multiple `create` found
+   |
+note: candidate #1 is defined in an impl of the trait `ResponseErrorTrait` for the type `std::string::String`
+  --> src/app/errors/person_errors.rs:32:5
+   |
+32 |     fn create(person_error: PersonError) -> ErrorMessage {
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+note: candidate #2 is defined in an impl of the trait `Toast` for the type `std::string::String`
+  --> src/app/components/toast.rs:23:5
+   |
+23 |     fn create(toast_message_type: ToastMessageType) -> ToastMessage {
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+help: use fully-qualified syntax to disambiguate
+   |
+54 |         Err(person_error) => Err(ServerFnError::Args(<std::string::String as ResponseErrorTrait>::create(person_error))),
+   |                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+54 |         Err(person_error) => Err(ServerFnError::Args(<std::string::String as Toast>::create(person_error))),
+   |       
+    
+```
