@@ -1,5 +1,5 @@
 use crate::app::{
-    errors::ResponseErrorTrait,
+    errors::{person_errors::ErrorMessage, PersonError, ResponseErrorTrait},
     models::person::{AddPersonRequest, EditPersonRequest, Person},
 };
 
@@ -46,10 +46,12 @@ pub async fn edit_person(edit_person_request: EditPersonRequest) -> Result<Perso
             if let Some(updated_person) = updated_result {
                 Ok(updated_person)
             } else {
-                Err(ServerFnError::Args("failed to create member".to_string()))
+                Err(ServerFnError::Args(ErrorMessage::create(
+                    ErrorMessage::new("member not found"),
+                )))
             }
         }
-        Err(_) => Err(ServerFnError::Args("person error".to_string())),
+        Err(e) => Err(ServerFnError::Args(ErrorMessage::create(e))),
     }
 }
 
