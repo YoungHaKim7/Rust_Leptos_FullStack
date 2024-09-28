@@ -1,7 +1,39 @@
+<p align="center">
 <picture>
     <source srcset="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_Solid_White.svg" media="(prefers-color-scheme: dark)">
-    <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
+    <img width=60px src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
 </picture>
+    
+</p>
+
+<hr>
+
+# 3개 기본 실행
+
+- install
+
+```bash
+# tailwindcss npm install
+npm install -D tailwindcss
+
+npx tailwindcss init
+```
+
+- run
+
+```bash
+# tailwindcss watch
+$ npm run watch
+    
+# leptos watch모드로 시작
+$ cargo leptos watch
+
+
+# SQL 서버 시작(SurrealDB)
+$ surreal start --log trace --user root --pass root memory
+```
+
+<hr>
 
 # Leptos Starter Template
 
