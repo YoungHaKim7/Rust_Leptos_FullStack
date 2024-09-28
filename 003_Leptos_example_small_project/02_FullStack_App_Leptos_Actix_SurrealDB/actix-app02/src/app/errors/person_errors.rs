@@ -20,10 +20,6 @@ pub enum PersonError {
 pub struct ErrorMessage(String);
 
 impl ErrorMessage {
-    pub fn new(message: &str) -> ErrorMessage {
-        ErrorMessage(message.to_string())
-    }
-
     pub fn create(person_error: PersonError) -> String {
         match person_error {
             PersonError::PersonNotFound => "member not found".to_string(),
@@ -41,13 +37,3 @@ impl fmt::Display for ErrorMessage {
 pub trait ResponseErrorTrait {
     fn create(person_error: PersonError) -> ErrorMessage;
 }
-
-// impl ResponseErrorTrait for ErrorMessage {
-//     fn create(person_error: PersonError) -> ErrorMessage {
-//         match person_error {
-//             PersonError::PersonNotFound => ErrorMessage::create(person_error),
-//             PersonError::PersonUpdateFailure => ErrorMessage::create(person_error),
-//             PersonError::PersonCreationFailure => ErrorMessage::create(person_error),
-//         }
-//     }
-// }
