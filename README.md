@@ -54,7 +54,7 @@
     - [tailwindcss세팅 example](./001_Leptos_Tutorial/10_Interlude_Styling/b99_tailwindcss_final_ver)
     ```bash
     # tailwindcss watch css
-    # package.json안에 작성필요
+    # package.json & tailwind.config.js 안에 작성필요
     npm run watch
     ```
     - install
