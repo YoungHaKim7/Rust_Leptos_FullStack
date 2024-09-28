@@ -250,10 +250,14 @@ cargo add stylance -F nightly
 # stylance 치면 scss -> css로 변환됨.
 
 ```bash
-
+# 1회성 수동모드
 stylance . --output-file ./index.css
 Running stylance
 ././src/main.module.scss
+
+
+# watch 모드(실시간으로 확인하면서 하자)
+stylance --watch . --output-file ./styles.css
 ```
 
 
