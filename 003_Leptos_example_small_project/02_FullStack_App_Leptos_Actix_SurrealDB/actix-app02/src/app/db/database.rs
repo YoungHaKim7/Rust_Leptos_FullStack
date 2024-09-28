@@ -83,7 +83,7 @@ cfg_if::cfg_if! {
                                         found_person.joined_date
                                     ))
                                     .await;
-                                DB.invalidate().await;
+                                let _ = DB.invalidate().await;
                                 match updated_user {
                                     Ok(returned_user) => Ok(returned_user),
                                     Err(_) => Err(PersonError::PersonUpdateFailure)
@@ -93,7 +93,7 @@ cfg_if::cfg_if! {
                     }
                 },
                 Err(_) => {
-                    DB.invalidate().await;
+                    let _ = DB.invalidate().await;
                     Err(PersonError::PersonNotFound)
                 }
             }

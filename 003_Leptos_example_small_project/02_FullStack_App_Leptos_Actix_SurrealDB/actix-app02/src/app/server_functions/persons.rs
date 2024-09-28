@@ -47,7 +47,7 @@ pub async fn edit_person(edit_person_request: EditPersonRequest) -> Result<Perso
                 Ok(updated_person)
             } else {
                 Err(ServerFnError::Args(ErrorMessage::create(
-                    ErrorMessage::new("member not found"),
+                    PersonError::PersonUpdateFailure,
                 )))
             }
         }
@@ -61,7 +61,6 @@ cfg_if::cfg_if! {
 
         use crate::app::{
             db::database,
-            errors::PersonError,
         };
         use chrono::{DateTime, Local};
         use uuid::Uuid;
