@@ -73,6 +73,12 @@
 
 <hr>
 
+- Leptos최신소식
+  - [(24. 9. 29)Leptos September Meetup: Cloudflare and Leptos, 0.7 Update, and More | Leptos](https://www.youtube.com/live/EsBLdHFPL1g?si=RF-_6b9XhduZlui7)
+
+<hr />
+
+
 - Leptos 외국 관련글모음
   - [242402_Full Stack Rust with Leptos](https://benw.is/posts/full-stack-rust-with-leptos) 
 
